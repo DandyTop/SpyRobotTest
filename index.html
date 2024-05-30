@@ -19,14 +19,7 @@
       <div id="unity-warning"> </div>
     </div>
     <script>
-      function toggleFullscreenOnLoad() 
-      {
-        if (window.scrollY === 0) 
-        {
-          window.scrollTo(0, 1);
-        }
-      }
-      
+          
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
@@ -87,8 +80,7 @@
         document.getElementsByTagName('head')[0].appendChild(meta);
         container.className = "unity-mobile";
         canvas.className = "unity-mobile";
-        
-        window.addEventListener('load', toggleFullscreenOnLoad);
+
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
